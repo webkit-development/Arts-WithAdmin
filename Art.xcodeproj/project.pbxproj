@@ -13,6 +13,26 @@
 		52DE6A4827FEA40C00C195BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A4627FEA40C00C195BC /* Main.storyboard */; };
 		52DE6A4A27FEA40C00C195BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A4927FEA40C00C195BC /* Assets.xcassets */; };
 		52DE6A4D27FEA40C00C195BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A4B27FEA40C00C195BC /* LaunchScreen.storyboard */; };
+		52DE6A5B27FEA42900C195BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A5A27FEA42900C195BC /* AppDelegate.swift */; };
+		52DE6A5D27FEA42900C195BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A5C27FEA42900C195BC /* SceneDelegate.swift */; };
+		52DE6A5F27FEA42900C195BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A5E27FEA42900C195BC /* ViewController.swift */; };
+		52DE6A6227FEA42900C195BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A6027FEA42900C195BC /* Main.storyboard */; };
+		52DE6A6727FEA42900C195BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A6527FEA42900C195BC /* LaunchScreen.storyboard */; };
+		52DE6A6D27FEA44F00C195BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A4927FEA40C00C195BC /* Assets.xcassets */; };
+		52DE6A6F27FEA47500C195BC /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A6E27FEA47500C195BC /* LoginStoryboard.storyboard */; };
+		52DE6A7127FEA68A00C195BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A7027FEA68A00C195BC /* GoogleService-Info.plist */; };
+		52DE6A7227FEA68A00C195BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52DE6A7027FEA68A00C195BC /* GoogleService-Info.plist */; };
+		52DE6A7527FEA74600C195BC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A7427FEA74600C195BC /* FirebaseAnalytics */; };
+		52DE6A7727FEA74600C195BC /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A7627FEA74600C195BC /* FirebaseAnalyticsSwift-Beta */; };
+		52DE6A7927FEA74600C195BC /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A7827FEA74600C195BC /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		52DE6A7B27FEA74600C195BC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A7A27FEA74600C195BC /* FirebaseAuth */; };
+		52DE6A7D27FEA74600C195BC /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A7C27FEA74600C195BC /* FirebaseFirestore */; };
+		52DE6A7F27FEA74600C195BC /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A7E27FEA74600C195BC /* FirebaseFunctions */; };
+		52DE6A8127FEA74600C195BC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A8027FEA74600C195BC /* FirebaseStorage */; };
+		52DE6A8427FEA76600C195BC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A8327FEA76600C195BC /* Kingfisher */; };
+		52DE6A8727FEA9D300C195BC /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A8627FEA9D300C195BC /* Stripe */; };
+		52DE6A8927FEA9D300C195BC /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A8827FEA9D300C195BC /* StripeApplePay */; };
+		52DE6A8B27FEA9D300C195BC /* StripeConnections in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A8A27FEA9D300C195BC /* StripeConnections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +44,37 @@
 		52DE6A4927FEA40C00C195BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52DE6A4C27FEA40C00C195BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52DE6A4E27FEA40C00C195BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DE6A5827FEA42800C195BC /* ArtAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DE6A5A27FEA42900C195BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52DE6A5C27FEA42900C195BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		52DE6A5E27FEA42900C195BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52DE6A6127FEA42900C195BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52DE6A6627FEA42900C195BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52DE6A6827FEA42900C195BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DE6A6E27FEA47500C195BC /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		52DE6A7027FEA68A00C195BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		52DE6A3A27FEA40C00C195BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DE6A7727FEA74600C195BC /* FirebaseAnalyticsSwift-Beta in Frameworks */,
+				52DE6A7927FEA74600C195BC /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				52DE6A8B27FEA9D300C195BC /* StripeConnections in Frameworks */,
+				52DE6A7527FEA74600C195BC /* FirebaseAnalytics in Frameworks */,
+				52DE6A7F27FEA74600C195BC /* FirebaseFunctions in Frameworks */,
+				52DE6A8427FEA76600C195BC /* Kingfisher in Frameworks */,
+				52DE6A8927FEA9D300C195BC /* StripeApplePay in Frameworks */,
+				52DE6A8127FEA74600C195BC /* FirebaseStorage in Frameworks */,
+				52DE6A7D27FEA74600C195BC /* FirebaseFirestore in Frameworks */,
+				52DE6A7B27FEA74600C195BC /* FirebaseAuth in Frameworks */,
+				52DE6A8727FEA9D300C195BC /* Stripe in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DE6A5527FEA42800C195BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,7 +87,9 @@
 		52DE6A3427FEA40C00C195BC = {
 			isa = PBXGroup;
 			children = (
+				52DE6A6C27FEA43F00C195BC /* Shared */,
 				52DE6A3F27FEA40C00C195BC /* Art */,
+				52DE6A5927FEA42800C195BC /* ArtAdmin */,
 				52DE6A3E27FEA40C00C195BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				52DE6A3D27FEA40C00C195BC /* Art.app */,
+				52DE6A5827FEA42800C195BC /* ArtAdmin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +110,33 @@
 				52DE6A4227FEA40C00C195BC /* SceneDelegate.swift */,
 				52DE6A4427FEA40C00C195BC /* ViewController.swift */,
 				52DE6A4627FEA40C00C195BC /* Main.storyboard */,
-				52DE6A4927FEA40C00C195BC /* Assets.xcassets */,
+				52DE6A6E27FEA47500C195BC /* LoginStoryboard.storyboard */,
 				52DE6A4B27FEA40C00C195BC /* LaunchScreen.storyboard */,
+				52DE6A7027FEA68A00C195BC /* GoogleService-Info.plist */,
 				52DE6A4E27FEA40C00C195BC /* Info.plist */,
 			);
 			path = Art;
+			sourceTree = "<group>";
+		};
+		52DE6A5927FEA42800C195BC /* ArtAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				52DE6A5A27FEA42900C195BC /* AppDelegate.swift */,
+				52DE6A5C27FEA42900C195BC /* SceneDelegate.swift */,
+				52DE6A5E27FEA42900C195BC /* ViewController.swift */,
+				52DE6A6027FEA42900C195BC /* Main.storyboard */,
+				52DE6A6527FEA42900C195BC /* LaunchScreen.storyboard */,
+				52DE6A6827FEA42900C195BC /* Info.plist */,
+			);
+			path = ArtAdmin;
+			sourceTree = "<group>";
+		};
+		52DE6A6C27FEA43F00C195BC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				52DE6A4927FEA40C00C195BC /* Assets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,8 +155,38 @@
 			dependencies = (
 			);
 			name = Art;
+			packageProductDependencies = (
+				52DE6A7427FEA74600C195BC /* FirebaseAnalytics */,
+				52DE6A7627FEA74600C195BC /* FirebaseAnalyticsSwift-Beta */,
+				52DE6A7827FEA74600C195BC /* FirebaseAnalyticsWithoutAdIdSupport */,
+				52DE6A7A27FEA74600C195BC /* FirebaseAuth */,
+				52DE6A7C27FEA74600C195BC /* FirebaseFirestore */,
+				52DE6A7E27FEA74600C195BC /* FirebaseFunctions */,
+				52DE6A8027FEA74600C195BC /* FirebaseStorage */,
+				52DE6A8327FEA76600C195BC /* Kingfisher */,
+				52DE6A8627FEA9D300C195BC /* Stripe */,
+				52DE6A8827FEA9D300C195BC /* StripeApplePay */,
+				52DE6A8A27FEA9D300C195BC /* StripeConnections */,
+			);
 			productName = Art;
 			productReference = 52DE6A3D27FEA40C00C195BC /* Art.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52DE6A5727FEA42800C195BC /* ArtAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DE6A6927FEA42900C195BC /* Build configuration list for PBXNativeTarget "ArtAdmin" */;
+			buildPhases = (
+				52DE6A5427FEA42800C195BC /* Sources */,
+				52DE6A5527FEA42800C195BC /* Frameworks */,
+				52DE6A5627FEA42800C195BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArtAdmin;
+			productName = ArtAdmin;
+			productReference = 52DE6A5827FEA42800C195BC /* ArtAdmin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,6 +202,9 @@
 					52DE6A3C27FEA40C00C195BC = {
 						CreatedOnToolsVersion = 13.3;
 					};
+					52DE6A5727FEA42800C195BC = {
+						CreatedOnToolsVersion = 13.3;
+					};
 				};
 			};
 			buildConfigurationList = 52DE6A3827FEA40C00C195BC /* Build configuration list for PBXProject "Art" */;
@@ -111,11 +216,17 @@
 				Base,
 			);
 			mainGroup = 52DE6A3427FEA40C00C195BC;
+			packageReferences = (
+				52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				52DE6A8227FEA76600C195BC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				52DE6A8527FEA9D300C195BC /* XCRemoteSwiftPackageReference "stripe-ios" */,
+			);
 			productRefGroup = 52DE6A3E27FEA40C00C195BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				52DE6A3C27FEA40C00C195BC /* Art */,
+				52DE6A5727FEA42800C195BC /* ArtAdmin */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +239,19 @@
 				52DE6A4D27FEA40C00C195BC /* LaunchScreen.storyboard in Resources */,
 				52DE6A4A27FEA40C00C195BC /* Assets.xcassets in Resources */,
 				52DE6A4827FEA40C00C195BC /* Main.storyboard in Resources */,
+				52DE6A6F27FEA47500C195BC /* LoginStoryboard.storyboard in Resources */,
+				52DE6A7127FEA68A00C195BC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DE6A5627FEA42800C195BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DE6A6727FEA42900C195BC /* LaunchScreen.storyboard in Resources */,
+				52DE6A6D27FEA44F00C195BC /* Assets.xcassets in Resources */,
+				52DE6A6227FEA42900C195BC /* Main.storyboard in Resources */,
+				52DE6A7227FEA68A00C195BC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +265,16 @@
 				52DE6A4527FEA40C00C195BC /* ViewController.swift in Sources */,
 				52DE6A4127FEA40C00C195BC /* AppDelegate.swift in Sources */,
 				52DE6A4327FEA40C00C195BC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DE6A5427FEA42800C195BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DE6A5F27FEA42900C195BC /* ViewController.swift in Sources */,
+				52DE6A5B27FEA42900C195BC /* AppDelegate.swift in Sources */,
+				52DE6A5D27FEA42900C195BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +293,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				52DE6A4C27FEA40C00C195BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		52DE6A6027FEA42900C195BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DE6A6127FEA42900C195BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52DE6A6527FEA42900C195BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DE6A6627FEA42900C195BC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -336,6 +486,62 @@
 			};
 			name = Release;
 		};
+		52DE6A6A27FEA42900C195BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F94T4F28AP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtAdmin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webkit.ArtAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52DE6A6B27FEA42900C195BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F94T4F28AP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArtAdmin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webkit.ArtAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -357,7 +563,101 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		52DE6A6927FEA42900C195BC /* Build configuration list for PBXNativeTarget "ArtAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DE6A6A27FEA42900C195BC /* Debug */,
+				52DE6A6B27FEA42900C195BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		52DE6A8227FEA76600C195BC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		52DE6A8527FEA9D300C195BC /* XCRemoteSwiftPackageReference "stripe-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stripe/stripe-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 22.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52DE6A7427FEA74600C195BC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		52DE6A7627FEA74600C195BC /* FirebaseAnalyticsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAnalyticsSwift-Beta";
+		};
+		52DE6A7827FEA74600C195BC /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		52DE6A7A27FEA74600C195BC /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		52DE6A7C27FEA74600C195BC /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		52DE6A7E27FEA74600C195BC /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		52DE6A8027FEA74600C195BC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A7327FEA74600C195BC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		52DE6A8327FEA76600C195BC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A8227FEA76600C195BC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		52DE6A8627FEA9D300C195BC /* Stripe */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A8527FEA9D300C195BC /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = Stripe;
+		};
+		52DE6A8827FEA9D300C195BC /* StripeApplePay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A8527FEA9D300C195BC /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeApplePay;
+		};
+		52DE6A8A27FEA9D300C195BC /* StripeConnections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52DE6A8527FEA9D300C195BC /* XCRemoteSwiftPackageReference "stripe-ios" */;
+			productName = StripeConnections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52DE6A3527FEA40C00C195BC /* Project object */;
 }
