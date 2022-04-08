@@ -33,6 +33,11 @@
 		52DE6A8727FEA9D300C195BC /* Stripe in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A8627FEA9D300C195BC /* Stripe */; };
 		52DE6A8927FEA9D300C195BC /* StripeApplePay in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A8827FEA9D300C195BC /* StripeApplePay */; };
 		52DE6A8B27FEA9D300C195BC /* StripeConnections in Frameworks */ = {isa = PBXBuildFile; productRef = 52DE6A8A27FEA9D300C195BC /* StripeConnections */; };
+		52DE6A9127FF6CBA00C195BC /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A9027FF6CBA00C195BC /* LoginVC.swift */; };
+		52DE6A9327FF6CE400C195BC /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A9227FF6CE400C195BC /* RegisterVC.swift */; };
+		52DE6A9627FFB19100C195BC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A9527FFB19100C195BC /* Extensions.swift */; };
+		52DE6A9827FFE92700C195BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A9727FFE92700C195BC /* Constants.swift */; };
+		52DE6A9B27FFF32200C195BC /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A9A27FFF32200C195BC /* RoundedViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +58,11 @@
 		52DE6A6827FEA42900C195BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DE6A6E27FEA47500C195BC /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		52DE6A7027FEA68A00C195BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52DE6A9027FF6CBA00C195BC /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		52DE6A9227FF6CE400C195BC /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		52DE6A9527FFB19100C195BC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		52DE6A9727FFE92700C195BC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52DE6A9A27FFF32200C195BC /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,12 +116,11 @@
 		52DE6A3F27FEA40C00C195BC /* Art */ = {
 			isa = PBXGroup;
 			children = (
-				52DE6A4027FEA40C00C195BC /* AppDelegate.swift */,
+				52DE6A8E27FF657700C195BC /* Model */,
+				52DE6A8D27FF655500C195BC /* View */,
+				52DE6A8C27FF654200C195BC /* Controller */,
+				52DE6A8F27FF658A00C195BC /* Storyboard */,
 				52DE6A4227FEA40C00C195BC /* SceneDelegate.swift */,
-				52DE6A4427FEA40C00C195BC /* ViewController.swift */,
-				52DE6A4627FEA40C00C195BC /* Main.storyboard */,
-				52DE6A6E27FEA47500C195BC /* LoginStoryboard.storyboard */,
-				52DE6A4B27FEA40C00C195BC /* LaunchScreen.storyboard */,
 				52DE6A7027FEA68A00C195BC /* GoogleService-Info.plist */,
 				52DE6A4E27FEA40C00C195BC /* Info.plist */,
 			);
@@ -134,9 +143,63 @@
 		52DE6A6C27FEA43F00C195BC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				52DE6A9927FFF2B300C195BC /* View */,
+				52DE6A9427FFB15B00C195BC /* Utils */,
 				52DE6A4927FEA40C00C195BC /* Assets.xcassets */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		52DE6A8C27FF654200C195BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52DE6A4027FEA40C00C195BC /* AppDelegate.swift */,
+				52DE6A4427FEA40C00C195BC /* ViewController.swift */,
+				52DE6A9027FF6CBA00C195BC /* LoginVC.swift */,
+				52DE6A9227FF6CE400C195BC /* RegisterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52DE6A8D27FF655500C195BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52DE6A8E27FF657700C195BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52DE6A8F27FF658A00C195BC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				52DE6A4627FEA40C00C195BC /* Main.storyboard */,
+				52DE6A4B27FEA40C00C195BC /* LaunchScreen.storyboard */,
+				52DE6A6E27FEA47500C195BC /* LoginStoryboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		52DE6A9427FFB15B00C195BC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				52DE6A9527FFB19100C195BC /* Extensions.swift */,
+				52DE6A9727FFE92700C195BC /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		52DE6A9927FFF2B300C195BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52DE6A9A27FFF32200C195BC /* RoundedViews.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DE6A4527FEA40C00C195BC /* ViewController.swift in Sources */,
+				52DE6A9627FFB19100C195BC /* Extensions.swift in Sources */,
 				52DE6A4127FEA40C00C195BC /* AppDelegate.swift in Sources */,
+				52DE6A9127FF6CBA00C195BC /* LoginVC.swift in Sources */,
+				52DE6A9B27FFF32200C195BC /* RoundedViews.swift in Sources */,
+				52DE6A9827FFE92700C195BC /* Constants.swift in Sources */,
 				52DE6A4327FEA40C00C195BC /* SceneDelegate.swift in Sources */,
+				52DE6A9327FF6CE400C195BC /* RegisterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

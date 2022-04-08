@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="LoginVC" customModule="Art" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,7 +55,7 @@
                                         <rect key="frame" x="0.0" y="156" width="388" height="37"/>
                                         <color key="color" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </activityIndicatorView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvk-zV-7l4">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvk-zV-7l4" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="205" width="388" height="40"/>
                                         <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -66,7 +66,7 @@
                                             <color key="baseForegroundColor" red="0.95294117647058818" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-db-eeI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-db-eeI" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="257" width="388" height="40"/>
                                         <color key="backgroundColor" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -80,7 +80,7 @@
                                             <segue destination="ZcY-Nm-YsZ" kind="show" id="7NE-50-pAL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1S-EV-jA8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1S-EV-jA8" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="309" width="388" height="40"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="647.66355140186909" y="95.896328293736502"/>
         </scene>
-        <!--View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="6TI-Bw-Uck">
             <objects>
-                <viewController id="ZcY-Nm-YsZ" sceneMemberID="viewController">
+                <viewController id="ZcY-Nm-YsZ" customClass="RegisterVC" customModule="Art" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yfo-RW-oCz">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO3-ng-Ndz">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rO3-ng-Ndz" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="293" width="388" height="40"/>
                                         <color key="backgroundColor" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -178,20 +178,23 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Register">
                                             <color key="baseForegroundColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="registerClicked:" destination="ZcY-Nm-YsZ" eventType="touchUpInside" id="q7X-qr-G2D"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="N1Y-g7-RRZ">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="N1Y-g7-RRZ">
                                 <rect key="frame" x="204" y="453" width="20" height="20"/>
                                 <color key="color" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="hye-eA-ma4">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="hye-eA-ma4">
                                 <rect key="frame" x="370" y="300" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="nGr-pN-gCO"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="Ui4-vT-ndP">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="Ui4-vT-ndP">
                                 <rect key="frame" x="370" y="355" width="35" height="35"/>
                             </imageView>
                         </subviews>
@@ -206,6 +209,7 @@
                             <constraint firstItem="hye-eA-ma4" firstAttribute="leading" secondItem="Tfl-28-4wf" secondAttribute="leading" constant="370" id="I5C-MP-hre"/>
                             <constraint firstItem="u76-rh-Jgy" firstAttribute="centerX" secondItem="N1Y-g7-RRZ" secondAttribute="centerX" id="QJL-EK-C0L"/>
                             <constraint firstItem="Ui4-vT-ndP" firstAttribute="top" secondItem="hye-eA-ma4" secondAttribute="bottom" constant="20" id="RcF-Wf-vqP"/>
+                            <constraint firstItem="Ui4-vT-ndP" firstAttribute="height" secondItem="hye-eA-ma4" secondAttribute="height" id="S6L-Xt-FSg"/>
                             <constraint firstItem="Tfl-28-4wf" firstAttribute="trailing" secondItem="hye-eA-ma4" secondAttribute="trailing" constant="23" id="T7b-eJ-DAf"/>
                             <constraint firstItem="hye-eA-ma4" firstAttribute="trailing" secondItem="Ui4-vT-ndP" secondAttribute="trailing" id="TcL-T8-biy"/>
                             <constraint firstItem="hye-eA-ma4" firstAttribute="top" secondItem="Tfl-28-4wf" secondAttribute="top" constant="212" id="deT-TM-cwr"/>
@@ -218,6 +222,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0hY-oC-Iqg"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="N1Y-g7-RRZ" id="vIq-Ut-nvq"/>
+                        <outlet property="confirmPassImgCheck" destination="Ui4-vT-ndP" id="JuX-9Y-56S"/>
+                        <outlet property="confirmPasswordTxt" destination="Gdf-IQ-yOC" id="v8I-4B-eRf"/>
+                        <outlet property="emailTxt" destination="SqG-eF-9nh" id="rSB-Lb-tsB"/>
+                        <outlet property="passImgCheck" destination="hye-eA-ma4" id="dmS-mn-uSy"/>
+                        <outlet property="passwordTxt" destination="56W-Za-def" id="437-Gz-TQB"/>
+                        <outlet property="usernameTxt" destination="ZXN-ei-f0f" id="1WC-T2-cAc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lms-kk-Tl5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
