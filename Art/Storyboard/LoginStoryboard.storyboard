@@ -50,6 +50,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Forgot Password?" titleAlignment="trailing">
                                             <color key="baseForegroundColor" red="0.83529411764705885" green="0.39215686274509803" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="forgotPassClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QHh-km-fh9"/>
+                                        </connections>
                                     </button>
                                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XmD-1Y-6aE">
                                         <rect key="frame" x="0.0" y="156" width="388" height="37"/>
@@ -65,6 +68,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Login">
                                             <color key="baseForegroundColor" red="0.95294117647058818" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7cH-Qd-RN4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-db-eeI" customClass="RoundedButton" customModule="Art" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="257" width="388" height="40"/>
@@ -90,6 +96,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Continue As Guest">
                                             <color key="baseForegroundColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="guestClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gpI-pg-QDn"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -111,6 +120,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FcO-dF-qf3"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="XmD-1Y-6aE" id="5JU-TY-FW9"/>
+                        <outlet property="emailTxt" destination="m0h-Oj-3Fz" id="hrx-dr-qc0"/>
+                        <outlet property="passwordTxt" destination="NML-oY-2pA" id="Zqd-9l-73w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
