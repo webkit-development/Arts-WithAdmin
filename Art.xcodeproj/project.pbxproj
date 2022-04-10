@@ -12,6 +12,10 @@
 		52C06A452801F54700A8F136 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C06A422801F54700A8F136 /* CategoryCell.swift */; };
 		52C06A462801F54700A8F136 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C06A432801F54700A8F136 /* CategoryCell.xib */; };
 		52C06A472801F54700A8F136 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C06A432801F54700A8F136 /* CategoryCell.xib */; };
+		52C06A4A2803417200A8F136 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C06A492803417200A8F136 /* ProductsVC.swift */; };
+		52C06A4B2803417200A8F136 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C06A492803417200A8F136 /* ProductsVC.swift */; };
+		52C06A4D2803479C00A8F136 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C06A4C2803479C00A8F136 /* Product.swift */; };
+		52C06A4E2803479C00A8F136 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C06A4C2803479C00A8F136 /* Product.swift */; };
 		52DE6A4127FEA40C00C195BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A4027FEA40C00C195BC /* AppDelegate.swift */; };
 		52DE6A4327FEA40C00C195BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A4227FEA40C00C195BC /* SceneDelegate.swift */; };
 		52DE6A4527FEA40C00C195BC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DE6A4427FEA40C00C195BC /* HomeVC.swift */; };
@@ -53,6 +57,8 @@
 		52C06A402801EA4600A8F136 /* Categry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categry.swift; sourceTree = "<group>"; };
 		52C06A422801F54700A8F136 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		52C06A432801F54700A8F136 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		52C06A492803417200A8F136 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		52C06A4C2803479C00A8F136 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		52DE6A3D27FEA40C00C195BC /* Art.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Art.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DE6A4027FEA40C00C195BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52DE6A4227FEA40C00C195BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +188,7 @@
 				52DE6A4427FEA40C00C195BC /* HomeVC.swift */,
 				52DE6A9027FF6CBA00C195BC /* LoginVC.swift */,
 				52DE6A9227FF6CE400C195BC /* RegisterVC.swift */,
+				52C06A492803417200A8F136 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -235,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				52C06A402801EA4600A8F136 /* Categry.swift */,
+				52C06A4C2803479C00A8F136 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 				52DE6A4127FEA40C00C195BC /* AppDelegate.swift in Sources */,
 				52DE6A9127FF6CBA00C195BC /* LoginVC.swift in Sources */,
 				52DE6A9B27FFF32200C195BC /* RoundedViews.swift in Sources */,
+				52C06A4A2803417200A8F136 /* ProductsVC.swift in Sources */,
 				52DE6A9F2801134700C195BC /* ForgotPasswordVC.swift in Sources */,
 				52DE6AA2280157FC00C195BC /* FirebaseUtils.swift in Sources */,
 				52DE6A9827FFE92700C195BC /* Constants.swift in Sources */,
@@ -377,6 +386,7 @@
 				52DE6A9327FF6CE400C195BC /* RegisterVC.swift in Sources */,
 				52C06A412801EA4600A8F136 /* Categry.swift in Sources */,
 				52C06A442801F54700A8F136 /* CategoryCell.swift in Sources */,
+				52C06A4D2803479C00A8F136 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,9 +396,11 @@
 			files = (
 				52DE6AA32801606500C195BC /* FirebaseUtils.swift in Sources */,
 				52DE6A5F27FEA42900C195BC /* ViewController.swift in Sources */,
+				52C06A4B2803417200A8F136 /* ProductsVC.swift in Sources */,
 				52DE6A5B27FEA42900C195BC /* AppDelegate.swift in Sources */,
 				52DE6A5D27FEA42900C195BC /* SceneDelegate.swift in Sources */,
 				52C06A452801F54700A8F136 /* CategoryCell.swift in Sources */,
+				52C06A4E2803479C00A8F136 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

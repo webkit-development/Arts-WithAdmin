@@ -19,6 +19,14 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let category = Category.init(
+            name: "Nature",
+            id: "edsdlknsjdf",
+            imgUrl: "https://images.unsplash.com/photo-1649577291764-2aee381c7b63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+            isActive: true,
+            timeStamp: Timestamp()
+        )
+        categories.append(category)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: Identifiers.CategoryCell, bundle: nil), forCellWithReuseIdentifier: Identifiers.CategoryCell)
