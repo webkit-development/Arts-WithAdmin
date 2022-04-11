@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cat3" translatesAutoresizingMaskIntoConstraints="NO" id="uXP-Xb-W7X">
-                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
+                                <rect key="frame" x="0.0" y="0.0" width="448" height="926"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L10-ja-wHj">
-                                <rect key="frame" x="20" y="88" width="388" height="804"/>
+                                <rect key="frame" x="30" y="0.0" width="388" height="926"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DtU-3h-UdB">
                                     <size key="itemSize" width="128" height="128"/>
@@ -31,25 +31,23 @@
                                 <cells/>
                             </collectionView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ZI5-IY-gyt">
-                                <rect key="frame" x="195.66666666666666" y="444.66666666666669" width="36.666666666666657" height="36.666666666666686"/>
+                                <rect key="frame" x="195.66666666666666" y="356.66666666666669" width="56.666666666666657" height="37"/>
                                 <color key="color" red="0.83529411760000005" green="0.3921568627" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZI5-IY-gyt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="356.66666666666663" id="7dx-qu-elZ"/>
+                            <constraint firstItem="ZI5-IY-gyt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="356.66666666666663" id="7dx-qu-elZ"/>
                             <constraint firstItem="uXP-Xb-W7X" firstAttribute="top" secondItem="L10-ja-wHj" secondAttribute="top" id="Af5-I3-Ivk"/>
-                            <constraint firstItem="uXP-Xb-W7X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BRZ-yH-q0J"/>
+                            <constraint firstItem="uXP-Xb-W7X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BRZ-yH-q0J"/>
                             <constraint firstItem="L10-ja-wHj" firstAttribute="centerX" secondItem="ZI5-IY-gyt" secondAttribute="centerX" id="BrO-CQ-939"/>
                             <constraint firstItem="L10-ja-wHj" firstAttribute="centerX" secondItem="uXP-Xb-W7X" secondAttribute="centerX" id="Ez9-yB-isu"/>
-                            <constraint firstItem="ZI5-IY-gyt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MLw-5N-2hO"/>
-                            <constraint firstItem="ZI5-IY-gyt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="195.66666666666669" id="MN7-BR-1Xv"/>
+                            <constraint firstItem="ZI5-IY-gyt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="195.66666666666669" id="MN7-BR-1Xv"/>
                             <constraint firstAttribute="bottomMargin" secondItem="uXP-Xb-W7X" secondAttribute="bottom" constant="-34" id="NJw-YO-3Us"/>
-                            <constraint firstItem="L10-ja-wHj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Nis-tS-6uZ"/>
-                            <constraint firstItem="L10-ja-wHj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ajC-hI-BpG"/>
-                            <constraint firstItem="uXP-Xb-W7X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ff8-Lb-R8y"/>
-                            <constraint firstItem="L10-ja-wHj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xUb-Jt-SUF"/>
+                            <constraint firstItem="L10-ja-wHj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="Nis-tS-6uZ"/>
+                            <constraint firstItem="L10-ja-wHj" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="ajC-hI-BpG"/>
+                            <constraint firstItem="uXP-Xb-W7X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ff8-Lb-R8y"/>
+                            <constraint firstItem="L10-ja-wHj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="xUb-Jt-SUF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AmL-sp-Mwy">
@@ -119,7 +117,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ozq-ar-F45"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bN6-ZA-X1c"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hc0-zT-Vjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

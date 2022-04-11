@@ -14,7 +14,7 @@ struct Product {
     var category: String
     var price: Double
     var productDescription: String
-    var imgUrl: String
+    var imageUrl: String
     var timeStamp: Timestamp
     var stock: Int
     var favorite: Bool
