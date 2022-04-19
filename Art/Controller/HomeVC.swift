@@ -36,40 +36,8 @@ class HomeVC: UIViewController {
         }
     }
     
-    func fetchDocument() {
-        let docRef = db.collection("categories").document("VD64ogNfLGD1JtLQumdn")
-        docRef.addSnapshotListener { (snap, error) in
-            self.categories.removeAll()
-            guard let data = snap?.data() else {return}
-            let newCategory = Category.init(data: data)
-            self.categories.append(newCategory)
-            self.collectionView.reloadData()
-        }
-//        docRef.getDocument { (snap, error) in
-//            guard let data = snap?.data() else {return}
-//            let newCategory = Category.init(data: data)
-//            self.categories.append(newCategory)
-//            self.collectionView.reloadData()
-//        }
-    }
-    
-    func fetchCollection() {
-        let collectionReference = db.collection("categories")
-        listener = collectionReference.addSnapshotListener { (snap, error) in
-            guard let documents = snap?.documents else {return}
-            self.categories.removeAll()
-            for document in documents {
-                let data = document.data()
-                let newCategory = Category.init(data: data)
-                self.categories.append(newCategory)
-            }
-            self.collectionView.reloadData()
-        }
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
-        //fetchDocument()
-        fetchCollection()
+        setCategoriesListener()
         if let user = Auth.auth().currentUser , !user.isAnonymous {
             loginOutButton.title = "Logout"
         } else {
@@ -79,8 +47,57 @@ class HomeVC: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         listener.remove()
+        categories.removeAll()
+        collectionView.reloadData()
     }
 
+    func setCategoriesListener() {
+        listener = db.collection("categories").order(by: "timeStamp").addSnapshotListener({ (snap, error) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+                return
+            }
+            snap?.documentChanges.forEach({ (change) in
+                let data = change.document.data()
+                let category = Category.init(data: data)
+                switch change.type {
+                case .added:
+                    self.onDocumentAdded(change: change, category: category)
+                case .modified:
+                    self.onDocumentModified(change: change, category: category)
+                case .removed:
+                    self.onDocumentRemoved(change: change)
+                }
+            })
+        })
+    }
+    
+    func onDocumentAdded(change: DocumentChange, category: Category) {
+        let newIndex = Int(change.newIndex)
+        categories.insert(category, at: newIndex)
+        collectionView.insertItems(at: [IndexPath(item: newIndex, section: 0)])
+    }
+    
+    func onDocumentModified(change: DocumentChange, category: Category) {
+        if change.newIndex == change.oldIndex {
+            let index = Int(change.newIndex)
+            categories[index] = category
+            collectionView.reloadItems(at: [IndexPath(item: index, section: 0)])
+        } else {
+            let oldIndex = Int(change.oldIndex)
+            let newIndex = Int(change.newIndex)
+            categories.remove(at: oldIndex)
+            categories.insert(category, at: newIndex)
+            collectionView.moveItem(at: IndexPath(item: oldIndex, section: 0), to: IndexPath(item: newIndex, section: 0))
+        }
+    }
+    
+    func onDocumentRemoved(change: DocumentChange) {
+        let oldIndex = Int(change.oldIndex)
+        categories.remove(at: oldIndex)
+        collectionView.deleteItems(at: [IndexPath(item: oldIndex, section: 0)])
+    }
+    
     fileprivate func presentLoginController() {
         let storyboard = UIStoryboard(name: Storyboard.LoginStoryboard, bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: StoryboardId.LoginVC)
@@ -143,4 +160,42 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         }
     }
 }
+
+
+//This is reference from earlier code
+//func fetchDocument() {
+//        let docRef = db.collection("categories").document("VD64ogNfLGD1JtLQumdn")
+//        docRef.addSnapshotListener { (snap, error) in
+//            self.categories.removeAll()
+//            guard let data = snap?.data() else {return}
+//            let newCategory = Category.init(data: data)
+//            self.categories.append(newCategory)
+//            self.collectionView.reloadData()
+//        }
+////        docRef.getDocument { (snap, error) in
+////            guard let data = snap?.data() else {return}
+////            let newCategory = Category.init(data: data)
+////            self.categories.append(newCategory)
+////            self.collectionView.reloadData()
+////        }
+//    }
+//
+//    func fetchCollection() {
+//        let collectionReference = db.collection("categories")
+//        listener = collectionReference.addSnapshotListener { (snap, error) in
+//            guard let documents = snap?.documents else {return}
+//            snap?.documentChanges
+//            self.categories.removeAll()
+//            for document in documents {
+//                let data = document.data()
+//                let newCategory = Category.init(data: data)
+//                self.categories.append(newCategory)
+//            }
+//            self.collectionView.reloadData()
+//        }
+//    }
+//
+
+
+
 
